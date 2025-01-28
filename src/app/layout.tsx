@@ -47,12 +47,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white">
+      <body>
         <ReactQueryProvider>
           <Provider store={store}>
             <AppWalletProvider>
               <Header />
-              <main className="max-w-6xl mx-auto min-h-screen bg-white">
+              <main className="max-w-6xl mx-auto min-h-screen">
                 <div className=" h-24" />
                 {children}
                 <div className=" h-24" />

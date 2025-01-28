@@ -21,7 +21,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="bg-white shadow-md fixed w-full top-0 z-50">
+    <header className="border-x-neutral-200s fixed w-full top-0 z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-green-600">
@@ -33,16 +33,16 @@ export default function Header() {
           <nav className="hidden md:flex space-x-6 items-center">
             <Link
               href="/account"
-              className="text-gray-700 hover:text-green-600 flex items-center space-x-1 transition duration-300"
+              className="text-gray-500 hover:text-purple-900 flex items-center space-x-1 transition duration-300"
             >
-              <FaUserCircle className="text-gray-700 hover:text-green-600" />
+              <FaUserCircle className="text-gray-500 hover:text-purple-900" />
               <span>Account</span>
             </Link>
             <Link
               href="/create"
-              className="text-gray-700 hover:text-green-600 flex items-center space-x-1 transition duration-300"
+              className="text-gray-500 hover:text-purple-900 flex items-center space-x-1 transition duration-300"
             >
-              <FaPlusCircle className="text-gray-700 hover:text-green-600" />
+              <FaPlusCircle className="text-gray-500 hover:text-purple-900" />
               <span>Create</span>
             </Link>
           </nav>
@@ -60,7 +60,7 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-gray-700 focus:outline-none"
+          className="md:hidden text-gray-500 focus:outline-none"
         >
           {isOpen ? (
             <FaTimes className="w-6 h-6" />
@@ -72,20 +72,20 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <nav className="md:hidden bg-white shadow-md py-4">
+        <nav className="md:hidden bg-white bg-opacity-10 border-x-gray-200 py-4 ">
           <div className="container mx-auto px-6 space-y-4">
             {program && publicKey && (
               <>
                 <Link
                   href="/account"
-                  className="text-gray-700 hover:text-green-600 flex items-center space-x-2 transition duration-300"
+                  className="text-gray-500 hover:text-purple-900 flex items-center space-x-2 transition duration-300"
                 >
                   <FaUserCircle />
                   <span>Account</span>
                 </Link>
                 <Link
                   href="/create"
-                  className="text-gray-700 hover:text-green-600 flex items-center space-x-2 transition duration-300"
+                  className="text-gray-500 hover:text-purple-600 flex items-center space-x-2 transition duration-300"
                 >
                   <FaPlusCircle />
                   <span>Create</span>
