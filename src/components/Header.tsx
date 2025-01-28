@@ -25,7 +25,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-green-600">
-          TreLinka<span className="text-gray-700">OnSol</span>
+          Slydr<span className="text-gray-700">OnSol</span>
         </Link>
 
         {/* Static Navigation */}
